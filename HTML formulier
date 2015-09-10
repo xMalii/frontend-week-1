@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 2</title>
+</head>
+
+
+<body>
+   <h1>Aanmelden</h1>
+
+   <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+lopen de studenten stage, in het tweede en afstudeerjaar. </p>
+
+    <i>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+Amsterdam.</i>
+
+    <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+        Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons opnemen.</p>
+
+       <form>
+
+
+             <label>Naam <input type="text"></label>
+             <label>Bedrijf <input type="text"></label>
+             <label>Adres <input type="text"></label>
+             <label>Postcode <input type="text"></label>
+             <label>Plaats <input type="text"></label>
+             <label>Telefoon <input type="text"></label>
+             <label>E-mail <input type="text"></label>
+
+
+
+             Ik wil mij aanmelden: <input type="radio" name="aanmelden" value="project" checked>Voor een project
+                                          <input type="radio" name="aanmelden" value="stagebedrijf">Als stagebedrijf
+
+
+
+
+
+
+
+    <section>
+<!-- voor als je op: "Voor een project" klikt -->
+
+
+             <label>Titel <input type="text"></label>
+             <label>Opdrachtomschrijving <input type="text"></label>
+             <label>Doelstelling/intentie voor het project <input type="text"></label>
+             <label>Looptijd <input type="text"></label>
+             <label>Deadline <input type="date"></label>
+             <label>Opmerking <input type="text"></label>
+
+
+
+    </section>
+
+    <section>
+<!-- voor als je op: "Als stagebedrijf" klikt -->
+
+
+             Geschikt voor: <input type="radio" name="geschikt" value="tweedejaars" checked>Tweedejaars studenten
+                            <input type="radio" name="geschikt" value="afstudeer">Afstudeer studenten
+                            <input type="radio" name="geschikt" value="onbekend">Onbekend
+
+
+            Hoe lang is de stage? <input type="radio" name="duur" value="tien" checked>10 weken
+                                  <input type="radio" name="duur" value="twintig">20 weken
+    <p>Beschrijving werkzaamheden
+             <label>Beschrijving stagewerkzaamheden <input type="text"></label>
+             <label>Bedrijfsnaam <input type="text"></label>
+             <label>Adres <input type="text"></label>
+             <label>Postcode <input type="text"></label>
+             <label>Plaats <input type="text"></label>
+             <label>Sector <input type="text"></label>
+             <label>Core business <input type="text"></label>
+             <label>Opmerking <input type="text"></label>
+        </p>
+    </section>
+
+
+
+    <input type="submit" value="Versturen">
+    </form>
+
+</body>
+
+</html>
