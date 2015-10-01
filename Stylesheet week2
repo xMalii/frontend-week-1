@@ -1,0 +1,248 @@
+* {
+    font-family: helvetica;
+}
+
+a {
+    color:dimgray;
+}
+
+a:hover {
+    color:black;
+}
+
+/* header */
+body>header {
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color:cadetblue;
+    text-align: center;
+    font-family: helvetica;
+    color:aliceblue;
+
+
+}
+
+body>header>h1 {
+    text-shadow: 2px 2px white;
+    color:black
+
+}
+
+header>img {
+    width: 100%;
+    height: auto;
+}
+
+
+body>header>nav>ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+    list-style-type: none;
+    border-radius: 2em;
+    background-color:black;
+    box-shadow: 7px 7px 5px 0px rgba(209,209,2090,1);
+    justify-content: center;
+    font-family: helvetica;
+
+}
+
+body>header>nav>ul>li {
+    padding: 1rem;
+    box-sizing: border-box;
+    color:white;
+
+}
+
+body>header>nav>ul>li>a {
+    color:white;
+    text-decoration: none;
+
+
+}
+/* related en aside flexbox */
+
+section.related h2, body aside section h2 {
+    width: 100%;
+    text-align: center;
+
+}
+section.related, body aside section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 2em;
+    justify-content: center;
+}
+
+section.related article, body aside section article {
+    margin: 0 2em 2em 0;
+    flex-basis: 19em;
+    border-radius: 1em;
+    padding: 2em 2em;
+    transition: 0.3s;
+    background-color: aquamarine;
+}
+
+section.related article, {
+    background-color: aquamarine;
+}
+body aside section article {
+    background-color: darkgrey;
+}
+
+.related {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*artikel box model */
+
+
+
+main>article>header {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    color:cadetblue;
+
+}
+
+main>article>section {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    float:left;
+    width: 30%;
+
+}
+body>main>article>section::first-letter {
+    color:aquamarine;
+    font-size: 2em;
+
+}
+body>main>article>section {
+    font-size: 1em;
+
+}
+
+body>main article section:nth-of-type(2) {
+    background-color:darkgrey;
+}
+
+
+section>img {
+    width:100%;
+    height:auto;
+}
+
+section>img:hover {
+    width:100%;
+    height:auto;
+    transform:  scale(2,3);
+    transition:ease-in 1s;
+}
+
+
+
+
+
+
+//* footer *//
+
+
+body > footer {
+
+    width: 100%;
+    background-color: cadetblue;
+}
+
+body > footer:first-of-type {
+    background: #C0C0C0;
+    color: #6B6B6B;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    width: 100;
+}
+
+body > footer:last-of-type {
+    background: #C0C0C0;
+    color: #6B6B6B;
+    flex: none;
+    padding-top: 2em;
+    flex-wrap: wrap;
+}
+
+body > footer > section {
+    flex-wrap: wrap;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 90%;
+    flex: 1;
+}
+
+body > footer > section > h2 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+
+}
+
+body > footer > h1 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    padding-bottom: 1em;
+}
+
+body > footer:last-of-type {
+    flex: none;
+    padding-left: 1em;
+    clear:both;
+    width: 100%;
+}
+
+
+/* formulierpagina */
+
+
+main>form>fieldset {
+    padding: 1em;
+    margin: 1em;
+    display: inline-flex;
+    flex-direction:column;
+    width: 40em;
+}
+
+main>form>fieldset label {
+    display: block;
+    text-align: left;
+}
+
+main>form>input[type=submit] {
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+
+/*mediaquerie*/
+
+@media (max-width: 62em) {
+    body>header  {
+        background-color: darkgray;
+    }
+
+    main>article>section {
+
+    width: 100%;
+    }
+
+    body > footer > section {
+    flex-basis: 100%;
+    }
+}
